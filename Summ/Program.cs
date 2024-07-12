@@ -11,10 +11,11 @@ namespace Summ
             int sum = 0;
             int divider1 = 3;
             int divider2 = 5;
+            int equally = 0;
 
             for (int i = divider1; i <= randomValue; i++)
             {
-                if (i % divider1 == 0 || i % divider2 == 0)
+                if (i % divider1 == equally || i % divider2 == equally)
                 {
                     sum += i;
                 }
