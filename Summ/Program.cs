@@ -6,17 +6,15 @@ namespace Summ
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
-            int randomValue = rand.Next(0, 101);
-            int minNumber = 0;
+            Random random = new Random();
+            int randomValue = random.Next(0, 101);
             int sum = 0;
+            int divider1 = 3;
+            int divider2 = 5;
 
-            for (int i = minNumber; i <= randomValue; i++)
+            for (int i = divider1; i <= randomValue; i++)
             {
-                bool dividedByThree = i % 3 == 0;
-                bool dividedByFive = i % 5 == 0;
-
-                if (dividedByThree || dividedByFive)
+                if (i % divider1 == 0 || i % divider2 == 0)
                 {
                     sum += i;
                 }
